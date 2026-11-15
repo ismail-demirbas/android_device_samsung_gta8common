@@ -1,0 +1,16 @@
+[
+  {
+    "datetime": 1794675799,
+    "files": [
+      {
+        "filename": "lineage-24.0-20261114-UNOFFICIAL-gta8.zip",
+        "sha256": "773ebe7df42fab1538267811fc4cc21ce27d77d735cb2d47a4024326e1149850",
+        "size": 1375402213,
+        "os_sdk_level": 37,
+        "url": "https://github.com/ismail-demirbas/android_device_samsung_gta8common/releases/download/ota-linegeos24/lineage-24.0-20261114-UNOFFICIAL-gta8.zip"
+      }
+    ],
+    "type": "UNOFFICIAL",
+    "version": "24.0"
+  }
+]
