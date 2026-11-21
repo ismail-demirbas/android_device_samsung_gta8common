@@ -11,7 +11,7 @@ def FullOTA_InstallBegin(info):
     info.script.AppendExtra('mount("ext4", "EMMC", "/dev/block/mapper/vendor", "/vendor");')
     info.script.AppendExtra('run_program("/system/bin/sh", "/tmp/gta8_model.sh");')
     info.script.AppendExtra('unmount("/vendor");')
-    info.script.AppendExtra('ifelse(read_file("/tmp/gta8_model") == "x205" || read_file("/tmp/gta8_model") == "x207", ui_print("Model: " + read_file("/tmp/gta8_model")), abort("ERROR: Model SM-X205/SM-X207 could not be identified; installation was not performed."));')
+    info.script.AppendExtra('ifelse(read_file("/tmp/gta8_model") == "x200", abort("ERROR: SM-X200 (gta8wifi) is not supported by this ROM; installation was not performed."), ifelse(read_file("/tmp/gta8_model") == "x205" || read_file("/tmp/gta8_model") == "x207", ui_print("Model: " + read_file("/tmp/gta8_model")), abort("ERROR: Model SM-X205/SM-X207 could not be identified; installation was not performed.")));')
 
 
 def FullOTA_InstallEnd(info):
